@@ -150,7 +150,7 @@ static SiteSpecific certs[] = {
 static Key keys[] = {
 	/* modifier              keyval          function    arg */
 	{ MODKEY,                GDK_KEY_g,      spawn,      SETPROP("_SURF_URI", "_SURF_GO", PROMPT_GO) },
-	{ MODKEY,                GDK_KEY_f,      spawn,      SETPROP("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
+	// { MODKEY,                GDK_KEY_f,      spawn,      SETPROP("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
 	{ MODKEY,                GDK_KEY_slash,  spawn,      SETPROP("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
 	{ MODKEY,                GDK_KEY_m,      spawn,      BM_ADD("_SURF_URI") },
 
@@ -214,3 +214,5 @@ static Button buttons[] = {
 	{ OnAny,        0,              9,      clicknavigate,  { .i = +1 },    1 },
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
 };
+
+#define HOMEPAGE "https://duckduckgo.com/"
